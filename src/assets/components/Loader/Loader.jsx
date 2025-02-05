@@ -1,4 +1,4 @@
-import "./Loader.css"
-const Spinner = () => <div className="loader"></div>
+import "./Loader.scss";
+const Spinner = () => <div className="loader"></div>;
 
-export default Spinner
+export default Spinner;

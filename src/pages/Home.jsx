@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Loader from "../components/Loader/Loader";
+import Loader from "../assets/components/Loader/Loader.jsx";
 
 const API_KEY = "853d6c433b59d29ab1768a053e895bee";
 const BASE_URL = "https://api.themoviedb.org/3";
