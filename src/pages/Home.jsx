@@ -26,12 +26,18 @@ const useMoviesApi = (endpoint, params = {}) => {
     fetchData();
   }, [endpoint, JSON.stringify(params)]);
 
+  const helloList = data.map((movie) => (
+    <div key={movie.id}>
+      <h3>{movie.title}</h3>
+      <p>{movie.overview}</p>
+    </div>
+  ));
+
   return (
     <>
-      {loading ? <main>{helloList}</main> : <Loader />}
+      {loading ? <Loader /> : <main>{helloList}</main>}
     </>
-  )
-}
-
+  );
+};
 
 export default useMoviesApi;
